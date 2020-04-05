@@ -4,14 +4,14 @@ function main() {
   # TODO check prerequisites: .ssh directory with id_rsa.pub file, sha256sum, ssh
   
   # TODO attempt to continue where we left off in case of failures
-  echo <<EOT
+  cat <<EOF
 Starting viomi rooting procedure. Please make sure of the following before starting:
 1. Your robot connects to your wifi when booted and your computer is connected to the same network.
 2. It is powered off
 3. You have a working micro-USB cable plugged into the robot and ready to plug into your computer.
 
 Press [Enter] to continue
-EOT
+EOF
   read
 
   echo "We'll now try to connect to the ADB shell. Please connect the USB cable to your computer."
